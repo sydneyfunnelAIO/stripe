@@ -1,7 +1,45 @@
 .App {
-  text-align: center;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue","Ubuntu";
+  background-color: #1a1f36;
 }
+.logo{
+  color: #d6ecff;
+  font-size:1.7rem;
+  margin-left: .1rem;
+  padding-left: 14px;
+  padding-top: 10px;
 
+}
+.navigator{
+  color: #a3acb9;
+  overflow: hidden;
+  z-index: inherit;
+  border-right: #a3acb9 1px solid;
+  
+}
+.navigator a {
+  padding: 5px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.navigator .active {
+  background-color: #2a2f45;
+  color: #6c8eef !important;
+}
+.navigator .title {
+  font-size: .8rem;
+  font-weight: 600;
+  padding: 1rem;
+  cursor: pointer;
+  padding: 10px;
+}
+.navigator .title:hover {
+  background-color: #2a2f46;
+}
+.blue{
+  color: #6c8eef;
+  font-size: 1rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

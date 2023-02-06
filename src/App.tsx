@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./View/Home";
+import Navigator from "./Components/Navigator";
+import { Row } from "antd";
+import { CCol } from "@coreui/react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Row>
+        <CCol style={{ borderRight: "  #a3acb9 1px solid " }} md={2}>
+          <Navigator />
+        </CCol>
+        <CCol>
+          <Home />
+        </CCol>
+      </Row>
     </div>
   );
 }
